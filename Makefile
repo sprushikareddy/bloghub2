@@ -3,7 +3,7 @@ help:
 	@echo 'build-frontend   builds the frontend folder'
 	@echo 'run-backend      runs the django backend server'
 	@echo 'run-frontend     runs the react app'
-	@echo 'clean-backend    removes venv folder'
+	@echo 'clean-backend    removes venvefolder'
 	@echo 'clean-frontend   removes node_modules folder'
 
 build-backend:
