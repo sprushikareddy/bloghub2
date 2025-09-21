@@ -22,7 +22,7 @@ export const Logo = ({ textSize, animationDelay }: LogoProps): JSX.Element => {
         padding={10}
         animationDelay={animationDelay}
       >
-        Chronicles
+        bloghub
       </RoughNotation>
     </div>
   );
