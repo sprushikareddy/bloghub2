@@ -1,15 +1,4 @@
-# Chronicles
-
-## Table of contents
-
-1. [Description](#description)
-2. [Demo](#demo)
-3. [Screenshots](#screenshots)
-4. [Architecture Overview](#architecture-overview)
-5. [API Documentation](#api-documentation)
-6. [Frontend Component Tree Visualized](#component-tree)
-7. [ERD Visualized](#erd-vis)
-8. [Installation and Usage](#installation-usage)
+## BLOGHUB
 
 ## Description <a name="description"></a>
 
@@ -43,61 +32,6 @@ It is a full-stack blog web application built with React on the frontend and Dja
   - Search functionality i.e. search a blog by its title
   - A rich text editor for writing a blog
 
-## Demo <a name="demo"></a>
-
-Check the video demo at [https://youtu.be/70gXH6j7XtQ](https://youtu.be/70gXH6j7XtQ)
-
-## Screenshots <a name="screenshots"></a>
-
-![](readme-res//screenshots.png)
-
-## Architecture Overview <a name="architecture-overview"></a>
-
-![](readme-res//architecture.png)
-
-## API Documentation <a name="api-documentation"></a>
-
-All the endpoints are listed below. However, to view the details of the endpoints, visit [Chronicles Api Docs](https://documenter.getpostman.com/view/25138891/2s935oL3mZ).
-
-- <ins>Users</ins>:
-
-  - `api/users/user/signup/` - POST
-  - `api/users/user/login/token/` - POST
-  - `api/users/user/login/token/refresh/` - POST
-  - `api/users/all/` - GET
-  - `api/users/user/` - GET, PUT, DELETE
-
-- <ins>Blogs</ins>:
-
-  - `api/blogs/blogpost/` - POST
-  - `api/blogs/all/` - GET
-  - `api/blogs/blog/{blogId}/` - GET, PUT, DELETE
-  - `api/blogs/userblogs/` - GET
-
-- <ins>Comments</ins>:
-
-  - `api/blogs/blog/{blogId}/commentpost/` - POST
-  - `api/blogs/blog/{blogId}/comments/all/` - GET
-  - `api/blogs/blog/{blogId}/comment/{commentId}/` - PUT, DELETE
-  - `api/blogs/blog/{blogId}/totalcomments/` - GET
-
-- <ins>Applauds</ins>:
-
-  - `api/blogs/blog/{blogId}/applaud/` - POST
-  - `api/blogs/blog/{blogId}/applauder/exists/` - GET
-
-- <ins>Reading-list</ins>:
-  - `api/blogs/blog/{blogId}/readinglist/save/` - POST
-  - `api/blogs/readinglist/all/` - GET
-  - `api/blogs/blog/{blogId}/reader/exists/` - GET
-
-## Frontend Component Tree Visualized <a name="component-tree"></a>
-
-![](readme-res//component-tree-vis.png)
-
-## ERD Visualized <a name="erd-vis"></a>
-
-![](readme-res//erd-vis.png)
 
 ## Installation and Usage <a name="installation-usage"></a>
 
@@ -110,8 +44,8 @@ All the endpoints are listed below. However, to view the details of the endpoint
   - `pip >= 21.3.1`
   - `AWS account` - if you want to use AWS
   - Setup variables in the `backend\config.py` file to encapsulate all your secret-keys related to AWS. 
-- `git clone https://github.com/AI-14/chronicles.git` - clones the repository
-- `cd chronicles`
+- `git clone https://github.com/sprushikareddy/bloghub2.git` - clones the repository
+- `cd bloghub2`
 
 > NOTE: If you want to use local machine for image uploads rather than AWS-S3, then remove all the configs in `backend\core\settings.py` under `# AWS-S3`. Then in `backend\core\urls.py`, add this line `urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)`. With this setting, images will be stored under `backend\media\`.
 
